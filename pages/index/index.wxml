@@ -1,0 +1,137 @@
+<!--index.wxml-->
+<view class='contain'>
+    <swiper
+    indicator-dots=true
+    indicator-color="#fff"
+    indicator-active-color="red"
+    autoplay="true"
+    circular="true"
+    class="swiperbox" 
+  >
+    <block wx:for="{{imgUrls}}"  wx:key="item.href">
+      <swiper-item class="swiper_item">
+        <image src="{{item.img_url}}" data-webview="{{item.href}}" bindtap="pathto" class="slide-image"  style="width:100%,height:190px;" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="catebox">
+    <view class="cateitem" wx:key="item.href"  data-webview="{{item.href}}" bindtap='pathto'  wx:for="{{catesData}}">
+      <image class="cate_icon" src="{{item.icon_url}}"></image>
+      <text class="cate_name">{{item.cate_name}}</text>
+    </view>
+  </view>
+
+<view class='hotper'>
+<view class='hot_title'>
+  <text class='hottag'>热门演出</text>
+  <text class='more'>更多></text>
+</view>
+  <swiper
+    indicator-dots=true
+    indicator-color="#ccc"
+    indicator-active-color="red"
+    autoplay="true"
+    circular="true"
+    class='hotbox'
+  >
+    <block wx:for="{{getHotPerdata}}" wx:key="*this" >
+      <swiper-item >
+        <view wx:for="{{item}}" wx:for-item="val" wx:key="val.href" class='hotinner' >
+          <image  src="{{val.img_url}}" data-webview="{{val.href}}" bindtap="pathto" style="height:150px;width:100%;" />
+          <text class='hotdetail'>{{val.goods_desc}}</text>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 巡演聚合 -->
+<view class='hotper'>
+  <view class='hot_title'>
+    <text class='hottag'>巡演聚合</text>
+    <text class='more'>更多></text>
+  </view>
+  <view class='tour'>
+    <view wx:for="{{tourData}}" class="tour_list" wx:key="item.star_id">
+        <image class='tourimg' src="{{item.img_url}}"></image>
+        <text class='tourdesc'>{{item.desc}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- 巡演聚合 -->
+<view class='hotper'>
+  <view class='hot_title'>
+    <text class='hottag'>演唱会</text>
+    <text class='more'>更多></text>
+  </view>
+  <view class='vocal'>
+    <view wx:for="{{vocalData}}" class="vocal_list" wx:key="item.star_id">
+        <image class='vocalimg' src="{{item.img_url}}"></image>
+        <text class='vocaldesc'>{{item.goods_name}}</text>
+        <text class="vocaltime">{{item.show_time}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- 音乐会 -->
+<view class='hotper'>
+  <view class='hot_title'>
+    <text class='hottag'>音乐会</text>
+    <text class='more'>更多></text>
+  </view>
+  <view class='vocal'>
+    <view wx:for="{{musicData}}" class="vocal_list" wx:key="item.star_id">
+        <image class='vocalimg' src="{{item.img_url}}"></image>
+        <text class='vocaldesc'>{{item.goods_name}}</text>
+        <text class="vocaltime">{{item.show_time}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- 话剧 -->
+<view class='hotper'>
+  <view class='hot_title'>
+    <text class='hottag'>话剧</text>
+    <text class='more'>更多></text>
+  </view>
+  <view class='vocal'>
+    <view wx:for="{{dramaData}}" class="vocal_list" wx:key="item.star_id">
+        <image class='vocalimg' src="{{item.img_url}}"></image>
+        <text class='vocaldesc'>{{item.goods_name}}</text>
+        <text class="vocaltime">{{item.show_time}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- 体育赛事 -->
+<view class='hotper'>
+  <view class='hot_title'>
+    <text class='hottag'>体育赛事</text>
+    <text class='more'>更多></text>
+  </view>
+  <view class='vocal'>
+    <view wx:for="{{sportData}}" class="vocal_list" wx:key="item.star_id">
+        <image class='vocalimg' src="{{item.img_url}}"></image>
+        <text class='vocaldesc'>{{item.goods_name}}</text>
+        <text class="vocaltime">{{item.show_time}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- 演出资讯 -->
+<view class='hotper'>
+  <view class='hot_title'>
+    <text class='hottag'>演出资讯</text>
+    <text class='more'>更多></text>
+  </view>
+  <view class='vocal'>
+    <view wx:for="{{artcles}}" class="art_conner"   wx:key="item.article_id">
+        <text class='arttitle'>{{item.article_title}}</text>
+    </view>
+  </view>
+</view>
+
+
+</view>
+  

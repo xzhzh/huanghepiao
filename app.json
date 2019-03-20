@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/hotline/hotline",
+    "pages/webview/webview",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"#fff",
+    "navigationBarBackgroundColor": "#ff9600",
+    "navigationBarTitleText": "黄河票务",
+    "navigationBarTextStyle":"light"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"images/tab01_active.png",
+        "selectedIconPath":"images/tab01.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/hotline/hotline",
+        "iconPath": "images/tab02.png",
+        "selectedIconPath": "images/tab02_active.png",
+        "text": "热线"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/tab03.png",
+        "selectedIconPath": "images/tab03_active.png",
+        "text": "我的"
+      }
+    ],
+    "color": "#999",
+    "selectedColor": "#ff9600"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+
+}

@@ -1,0 +1,132 @@
+/**index.wxss**/
+.contain{
+  backdrop-color:#eeeeee;
+  padding-bottom:10px;
+}
+.swiperbox{
+  height:190px;
+}
+.swiper_item{
+  width:100%;
+}
+.slide-image{
+  width:100%;
+  height:190px;
+}
+.cate_icon{
+  width:40px;
+  height:40px;
+  margin-top:15px;
+}
+.catebox{
+  display: flex;
+  flex-wrap:wrap;
+  flex-wrap: wrap-reverse;
+}
+.cateitem{
+  width:25%;
+  text-align:center;
+}
+.cate_name{
+  font-size:14px;
+  display: block;
+  text-align:center;
+  color:#333333;
+  padding-bottom:5px;
+}
+.hotper{
+  overflow:hidden;
+ border-top:8px solid #eeeeee;
+}
+.hot_title{
+  padding:10px;
+}
+.hottag{
+  font-size:16px;
+  color:#ff9600;
+  font-weight:bold;
+}
+.more{
+  float:right;
+  font-size:12px;
+  margin-top:4px;
+  color:#999;
+  font-weight:600;
+}
+.hotinner{
+  width:30%;
+  float:left;
+  margin-left:3%;
+  height:200px;
+}
+.hotbox{
+  height:235px;
+}
+.hotdetail{
+  font-size:12px;
+  height:30px;
+  overflow: hidden;
+  line-height:15px;
+  text-overflow: ellipsis;
+  color:#666;
+}
+.hotinner{
+  height:210px;
+  overflow: hidden;
+}
+.tour_list{
+  float:left;
+  width:30%;
+  margin-left:3.33%
+}
+.tourimg{
+  width:100%;
+  height:135px;
+  border-radius:8px;
+}
+.tourdesc{
+  font-size:12px;
+  width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  color:#000;
+  margin-bottom:10px;
+}
+.vocal_list{
+  float:left;
+  width:45%;
+  margin-left:3.3%
+}
+.vocalimg{
+  width:100%;
+  height:220px;
+  border-radius:8px;
+}
+.vocaldesc{
+  font-size:14px;
+  width:100%;
+  height:37px;
+  overflow: hidden;
+  display: block;
+  color:#000;
+}
+.vocaltime{
+  font-size:12px;
+  color:#000;
+  margin-bottom:8px;
+}
+.art_conner{ 
+  padding:0 10px;
+  border-bottom:1px solid #ccc;
+  padding-bottom:10px;
+}
+.arttitle{
+  font-size:14px;
+  color:#333;
+  line-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
